@@ -1,3 +1,5 @@
+using Azure.Storage.Blobs;
+using Azure_Blob.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +26,11 @@ namespace Azure_Blob
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddSingleton(u => new BlobServiceClient(
+                Configuration.GetValue<string>("BlobConnection")
+                ));
+            services.AddSingleton<IContainerService, ContainerService>();
+            services.AddSingleton<IBlobService, BlobService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
