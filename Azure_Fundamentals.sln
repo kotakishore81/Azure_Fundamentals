@@ -1,9 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32929.386
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure_Blob", "Azure_Blob\Azure_Blob.csproj", "{BFDFD7F7-F92B-41DA-8E8F-9D59A215D88F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Azure_Blob", "Azure_Blob\Azure_Blob.csproj", "{BFDFD7F7-F92B-41DA-8E8F-9D59A215D88F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Azure_Functions", "Azure_Functions\Azure_Functions.csproj", "{359E4D04-3511-4742-BF49-1FBCD2920D0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AzureBlob", "AzureBlob", "{6CC6744E-99B0-49DA-B713-518D230106B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AzureFunctions", "AzureFunctions", "{7CA09279-C447-4661-A930-741C5AE879DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureTangyFunction", "AzureTangyFunction\AzureTangyFunction.csproj", "{76C1BF31-3F60-4374-BCAB-FA8E8B097002}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AzureCacheRedis", "AzureCacheRedis", "{DD900770-8D42-4B28-8D16-ED6AF8FEEF1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisCache", "RedisCache\RedisCache.csproj", "{F01136EB-3BD5-44EC-B8F8-4849D6424868}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureSpookyLogic", "AzureSpookyLogic\AzureSpookyLogic.csproj", "{577D3BFD-6116-489B-8160-90F2935CCA6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +29,31 @@ Global
 		{BFDFD7F7-F92B-41DA-8E8F-9D59A215D88F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFDFD7F7-F92B-41DA-8E8F-9D59A215D88F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFDFD7F7-F92B-41DA-8E8F-9D59A215D88F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{359E4D04-3511-4742-BF49-1FBCD2920D0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{359E4D04-3511-4742-BF49-1FBCD2920D0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{359E4D04-3511-4742-BF49-1FBCD2920D0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{359E4D04-3511-4742-BF49-1FBCD2920D0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76C1BF31-3F60-4374-BCAB-FA8E8B097002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76C1BF31-3F60-4374-BCAB-FA8E8B097002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76C1BF31-3F60-4374-BCAB-FA8E8B097002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76C1BF31-3F60-4374-BCAB-FA8E8B097002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F01136EB-3BD5-44EC-B8F8-4849D6424868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F01136EB-3BD5-44EC-B8F8-4849D6424868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F01136EB-3BD5-44EC-B8F8-4849D6424868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F01136EB-3BD5-44EC-B8F8-4849D6424868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{577D3BFD-6116-489B-8160-90F2935CCA6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{577D3BFD-6116-489B-8160-90F2935CCA6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{577D3BFD-6116-489B-8160-90F2935CCA6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{577D3BFD-6116-489B-8160-90F2935CCA6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BFDFD7F7-F92B-41DA-8E8F-9D59A215D88F} = {6CC6744E-99B0-49DA-B713-518D230106B6}
+		{359E4D04-3511-4742-BF49-1FBCD2920D0D} = {7CA09279-C447-4661-A930-741C5AE879DD}
+		{76C1BF31-3F60-4374-BCAB-FA8E8B097002} = {7CA09279-C447-4661-A930-741C5AE879DD}
+		{F01136EB-3BD5-44EC-B8F8-4849D6424868} = {DD900770-8D42-4B28-8D16-ED6AF8FEEF1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E46262FA-1CED-4EA5-9CDF-80EEC7FFD376}

@@ -24,7 +24,6 @@ namespace Azure_Blob.Services
             var blobClient = blobContainerClient.GetBlobClient(name);
             return await blobClient.DeleteIfExistsAsync();
         }
-
         public async Task<List<string>> GetAllBlobs(string containerName)
         {
             BlobContainerClient blobContainerClient = _blobClient.GetBlobContainerClient(containerName);
